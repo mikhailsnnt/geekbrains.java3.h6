@@ -15,4 +15,14 @@ public class ArrayUtil {
         }
         return targetArr;
     }
+    public static boolean findOneAndFour(int[] arr){
+        boolean findFour = false;
+        boolean findOne  = false;
+        for (int t :
+                arr) {
+            findOne  |= t == 1;
+            findFour |= t==4;
+        }
+        return findOne & findFour;
+    }
 }
